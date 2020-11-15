@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().setStatusBarColor(getColor(R.color.material_on_surface_emphasis_high_type));
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.black)));getWindow().setStatusBarColor(getColor(R.color.material_on_surface_emphasis_high_type));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.black)));
     }
 }
