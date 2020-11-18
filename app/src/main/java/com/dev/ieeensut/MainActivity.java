@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_developers:
                         Toast.makeText(MainActivity.this, "Developers", Toast.LENGTH_SHORT).show();
                         break;
+                    case R.id.nav_connect:
+                        Toast.makeText(MainActivity.this, "site, fb, insta, mail", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.nav_share:
                         Toast.makeText(MainActivity.this, "Share", Toast.LENGTH_SHORT).show();
                         break;

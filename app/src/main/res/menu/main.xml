@@ -50,6 +50,7 @@
             android:icon="@drawable/ic_join_ieee_24"
             />
 
+        //MORE ABOUT US
         <item
             android:id="@+id/nav_more_about_us"
             android:title="More about us">
@@ -65,6 +66,11 @@
                         android:id="@+id/nav_developers"
                         android:icon="@drawable/ic_about_app"
                         android:title="Developers" />
+                    //app:showAsAction="never" />
+                    <item
+                        android:id="@+id/nav_connect"
+                        android:icon="@drawable/www"
+                        android:title="Connect" />
                     //app:showAsAction="never" />
                     <item
                         android:id="@+id/nav_share"
