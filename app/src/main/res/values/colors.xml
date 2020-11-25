@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="red">#F30317</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue">#0657B3</color>
-    <color name="grey">#2B2B2B</color>
-    <color name="yellow">#FFB700</color>
-    <color name="brown">#AF3610</color>
-    <color name="green">#4DE823</color>
-    <color name="transparent">#4a4a4a</color>
+    <color name="colorPrimary">#0657B3</color>
+    <color name="colorPrimaryDark">#172329</color>
+    <color name="colorAccent">#c1620c</color>
+    <color name="colorRed">#D00300</color>
+    <color name="notification_color">#0376A3</color>
+    <color name="card_view_below">#EEEEEE</color>
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="transparent_black">#96000000</color>
+    <color name="collabratec_color">#388828</color>
+    <color name="transmitter_color">#4880a0</color>
+    <color name="transparentWhite">#80ffffff</color>
+    <color name="black">#000000</color>
 </resources>
