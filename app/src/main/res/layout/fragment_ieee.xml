@@ -26,23 +26,25 @@
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/ieee_text_view1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
             android:paddingTop="8dp"
-            android:text="IEEE is the world’s largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications, conferences, technology standards, and professional and educational activities." />
+            android:text="IEEE is the world’s largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications, conferences, technology standards, and professional and educational activities."
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
 
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/ieee_text_view3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
             android:paddingTop="8dp"
-            android:text="Core purpose of IEEE is to foster technological innovation and excellence for the benefit of humanity.\nand it's vision is to become essential to the technological community that exists throughout the world. They want their members to be the ones to revolutionize technology and improve global conditions. IEEE’s core values include trust, growth and nurturing, global community building, partnership, service to humanity, and integrity in action." />
+            android:text="Core purpose of IEEE is to foster technological innovation and excellence for the benefit of humanity.\nand it's vision is to become essential to the technological community that exists throughout the world. They want their members to be the ones to revolutionize technology and improve global conditions. IEEE’s core values include trust, growth and nurturing, global community building, partnership, service to humanity, and integrity in action."
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
 
         <TextView
             android:textColor="@android:color/black"
