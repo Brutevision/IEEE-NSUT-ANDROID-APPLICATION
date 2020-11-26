@@ -1,52 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/digitalbackground"
-    tools:context=".fragments.IasChapterFragment">
+    tools:context=".fragments.IasChapterFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="406dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ieee_ias_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/digitalbackground">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="176dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/ieee_ias_logo"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/digitalBackground"
-            android:text="@string/hello_blank_fragment"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text="The Industry Applications Society, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations; industry leadership in energy conservation and environmental, health, and safety issues; creation of voluntary engineering standards and recommended practices; and the professional development of its membership. If your engineering interests are the needs of the industrial or commercial sector, the Industry Applications Society (IAS) will be a valuable professional connection. One of the largest special interest societies within the Institute of Electrical and Electronics Engineers (IEEE), the IAS focuses specifically on the unique needs of industry and commerce. IAS is a source of professional power to its nearly 10,000 worldwide members. Through a network of over 100 chapters globally, regional events and national and international conferences, the society keeps members abreast of current developments in the area of technology in electricity and electronics. IAS enriches both its individual members and the industry as a whole through the sharing of specific industry-related solutions." />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="403dp"
+        android:layout_height="528dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="The Industry Applications Society, as a transnational organization, is interested in advancement of the theory and practice of electrical and electronic engineering in the development, design, manufacture and application of electrical systems, apparatus, devices and controls to the processes and equipment of industry and commerce; promotion of safe, reliable and economic installations; industry leadership in energy conservation and environmental, health, and safety issues; creation of voluntary engineering standards and recommended practices; and the professional development of its membership. If your engineering interests are the needs of the industrial or commercial sector, the Industry Applications Society (IAS) will be a valuable professional connection. One of the largest special interest societies within the Institute of Electrical and Electronics Engineers (IEEE), the IAS focuses specifically on the unique needs of industry and commerce. IAS is a source of professional power to its nearly 10,000 worldwide members. Through a network of over 100 chapters globally, regional events and national and international conferences, the society keeps members abreast of current developments in the area of technology in electricity and electronics. IAS enriches both its individual members and the industry as a whole through the sharing of specific industry-related solutions."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
