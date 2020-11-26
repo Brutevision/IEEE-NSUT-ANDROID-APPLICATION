@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/digitalbackground"
+    tools:context=".fragments.MttsIeee">
+
+    <ImageView
+        android:id="@+id/mttslogo"
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        android:src="@drawable/mttslogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mttsabout"
+        android:layout_width="403dp"
+        android:layout_height="522dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="MTT-S is a techincal society comprised of more than 11,000 members worldwide. The core purpose of the socity is to foster the advancement and application of RF and microwave theory and techniques. Members of MTT-S are engaged in research, devices, circuits, components, or systems. weblink:http://www.mtt.org To train a large number of students in the RF area and set up low-cost RF laboratories at various institutes. The initiative for providing 50% subsidised membership for new students joining IEEE MTT-S in 2010 as well as setting up scholarships for students/faculty who present papers at IEEE MTT-S International Microwave Symposium, EuMW, and APMC"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mttslogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
