@@ -15,4 +15,5 @@
     <color name="transmitter_color">#4880a0</color>
     <color name="transparentWhite">#80ffffff</color>
     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>
