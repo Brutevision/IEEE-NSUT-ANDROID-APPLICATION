@@ -10,10 +10,9 @@ import android.view.ViewGroup;
 
 import com.dev.ieeensut.R;
 
+public class CompSocietyFragment extends Fragment {
 
-public class IasChapterFragment extends Fragment {
-
-    public IasChapterFragment() {
+    public CompSocietyFragment() {
         // Required empty public constructor
     }
 
@@ -21,6 +20,6 @@ public class IasChapterFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ias_chapter, container, false);
+        return inflater.inflate(R.layout.fragment_comp_society, container, false);
     }
 }
