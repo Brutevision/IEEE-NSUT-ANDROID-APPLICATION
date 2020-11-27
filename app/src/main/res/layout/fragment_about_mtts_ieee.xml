@@ -1,40 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/aboutMttspage"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/text_horizontal_margin"
+android:paddingRight="@dimen/text_horizontal_margin"
+android:fillViewport="true"
+android:background="@color/white"
+tools:context=".fragments.IasChapterFragment">
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#402979FF"
-    android:orientation="vertical"
-    tools:context=".fragments.AboutMttsIeee">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:background="@drawable/digitalBackground"-->
 
     <ImageView
-        android:id="@+id/mttslogoView"
-        android:layout_width="0dp"
-        android:layout_height="202dp"
-        android:background="#592979FF"
-        android:orientation="vertical"
-        android:soundEffectsEnabled="false"
-        android:src="@drawable/mttslogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/mttslogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mttslogo" />
 
     <TextView
-        android:id="@+id/mttsTextView"
-        android:layout_width="352dp"
-        android:layout_height="493dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="sans-serif-medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
         android:text="MTT-S is a techincal society comprised of more than 11,000 members worldwide. The core purpose of the socity is to foster the advancement and application of RF and microwave theory and techniques. Members of MTT-S are engaged in research, devices, circuits, components, or systems. weblink: http://www.mtt.org To train a large number of students in the RF area and set up low-cost RF laboratories at various institutes. The initiative for providing 50% subsidised membership for new students joining IEEE MTT-S in 2010 as well as setting up scholarships for students/faculty who present papers at IEEE MTT-S International Microwave Symposium, EuMW, and APMC"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mttslogoView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <!--android:background="@drawable/digitalBackground"-->
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
