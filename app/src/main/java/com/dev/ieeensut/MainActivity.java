@@ -8,7 +8,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.media.VolumeShaper;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity
     private NavigationView mNavigationView;
 
     private String currentFragmentTag = "";
+    private int currentScreenOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,4 +131,5 @@ public class MainActivity extends AppCompatActivity
                 break;
         }
     }
+
 }
