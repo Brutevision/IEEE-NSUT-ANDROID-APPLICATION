@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.dev.ieeensut.fragments.AboutIeeeFragment;
 import com.dev.ieeensut.fragments.HomeFragment;
+import com.dev.ieeensut.fragments.IeeeResourcesFragment;
 import com.dev.ieeensut.helpers.ContentUtils;
 import com.dev.ieeensut.interfaces.OnHomeFragmentInteractionListener;
 import com.dev.ieeensut.interfaces.OnHomeSliderInteractionListener;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     private static final String HOME_FRAGMENT_TAG = "home_fragment";
     private static final String ABOUT_IEEE_FRAGMENT_TAG = "about_ieee_fragment";
     private static final String FRAGMENT_TAG_KEY = "fragment_tag_key";
+    private static final String IEEE_RESOURCES_TAG = "ieee_resources_tag";
 
     private NavigationView mNavigationView;
 
@@ -58,11 +60,13 @@ public class MainActivity extends AppCompatActivity
         //Create variable name for fragment
         HomeFragment homeFragment = (HomeFragment) fm.findFragmentByTag(HOME_FRAGMENT_TAG);
         AboutIeeeFragment ieeeFragment = (AboutIeeeFragment) fm.findFragmentByTag(ABOUT_IEEE_FRAGMENT_TAG);
+        IeeeResourcesFragment ieeeResourcesFragment = (IeeeResourcesFragment) fm.findFragmentByTag(IEEE_RESOURCES_TAG);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if ((ieeeFragment != null && ieeeFragment.isVisible())) {
+        } else if ((ieeeFragment != null && ieeeFragment.isVisible())
+                || (ieeeResourcesFragment != null && ieeeResourcesFragment.isVisible())) {
             ft.setCustomAnimations(R.anim.slide_back_from_left, R.anim.fade_translate_down);
             ft.replace(R.id.main_frame_layout, HomeFragment.newInstance(), HOME_FRAGMENT_TAG).addToBackStack(null).commit();
             mNavigationView.setCheckedItem(R.id.nav_home);
@@ -123,6 +127,14 @@ public class MainActivity extends AppCompatActivity
                     ft.replace(R.id.main_frame_layout, new AboutIeeeFragment(), ABOUT_IEEE_FRAGMENT_TAG).addToBackStack(null).commit();
                     mNavigationView.setCheckedItem(R.id.nav_ieee);
                     currentFragmentTag = ABOUT_IEEE_FRAGMENT_TAG;
+                }
+                break;
+            case R.id.nav_resource:
+                if(!currentFragmentTag.equals(IEEE_RESOURCES_TAG)) {
+                    ft.setCustomAnimations(R.anim.fade_translate_up, R.anim.slide_to_left);
+                    ft.replace(R.id.main_frame_layout, new IeeeResourcesFragment(), IEEE_RESOURCES_TAG).addToBackStack(null).commit();
+                    mNavigationView.setCheckedItem(R.id.nav_resource);
+                    currentFragmentTag = IEEE_RESOURCES_TAG;
                 }
                 break;
         }

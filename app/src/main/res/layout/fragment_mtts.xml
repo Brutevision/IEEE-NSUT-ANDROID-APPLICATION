@@ -22,6 +22,7 @@ tools:context=".fragments.IasChapterFragment">
         android:layout_height="200dp"
         android:scaleType="fitStart"
         android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
         android:src="@drawable/mttslogo" />
 
     <TextView
