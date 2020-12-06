@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "970323817040",
+    "project_id": "ieee-nsut",
+    "storage_bucket": "ieee-nsut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970323817040:android:37a44e1569249d423b9755",
+        "android_client_info": {
+          "package_name": "com.dev.ieeensut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970323817040-oh3pbu7amum6b4lgrdpopnqbhuplsp5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBicpJJjIo5J0VzLu_wGHCvvGMFtxVMCxY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970323817040-oh3pbu7amum6b4lgrdpopnqbhuplsp5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

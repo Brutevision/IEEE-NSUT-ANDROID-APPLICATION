@@ -89,7 +89,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.nav_join_ieee) {
+        if(id == R.id.nav_connect){
+            startActivity(new Intent(this, AboutAppActivity.class));
+        }
+        else if (id == R.id.nav_join_ieee) {
             Uri uri = Uri.parse(ContentUtils.JOIN_IEEE_URL);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             PackageManager packageManager = getPackageManager();

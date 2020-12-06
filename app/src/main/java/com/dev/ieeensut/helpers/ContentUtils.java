@@ -28,8 +28,8 @@ public class ContentUtils {
 
     public static final String WEBSITE_URL = "https://www.ieeensut.com/";
     public static final String FACEBOOK_URL = "https://www.facebook.com/ieeensit/";
-    public static final String INSTAGRAM_URL = "";
-    public static final String TWITTER_URL = "";
+    public static final String INSTAGRAM_URL = "https://www.instagram.com/ieee_nsut/";
+    public static final String TWITTER_URL = "https://twitter.com/ieeensut?lang=en";
     public static final String JOIN_IEEE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe92LHpgIFl9dvsDGR1H_Rwl9dQyvGbtjfBr67IcmkAbf-Rrw/viewform";
 
 
